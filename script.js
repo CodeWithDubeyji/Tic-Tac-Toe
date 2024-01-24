@@ -5,6 +5,7 @@ let message = document.querySelector(".msg");
 let turnMsg = document.querySelector(".turn");
 let clickCount = 0;
 let currPlayer = Math.random() < 0.5 ? 'O' : 'X';
+turnMsg.innerText = `${currPlayer}'s turn`;
 
 const winPatterns = [
     [0,1,2],
